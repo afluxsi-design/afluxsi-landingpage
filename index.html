@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfluxSI - Automatización de Flujos y Secuencias Inteligentes</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* bg-slate-900 */
+            color: #f1f5f9; /* text-slate-100 */
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, rgba(16, 185, 129, 0.15), transparent 70%), #0f172a;
+        }
+        .btn-gradient {
+            background: linear-gradient(to right, #10b981, #059669);
+        }
+        .btn-gradient:hover {
+            background: linear-gradient(to right, #059669, #10b981);
+        }
+        .modal-overlay {
+            background-color: rgba(15, 23, 42, 0.8); /* bg-slate-900 with opacity */
+            backdrop-filter: blur(4px);
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            transform: scale(0.95) translateY(20px);
+            opacity: 0;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        }
+        .modal-overlay.active .modal-content {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-white">Aflux<span class="text-emerald-400">SI</span></a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#soluciones" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Soluciones</a>
+                <a href="#precios" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Precios</a>
+                <a href="#contacto" class="text-slate-300 hover:text-emerald-400 transition-colors font-medium">Contacto</a>
+                <a href="#" class="bg-emerald-500 text-white font-bold py-2 px-4 rounded-lg shadow-lg hover:bg-emerald-600 transition-colors transform hover:scale-105">
+                    Acceso Clientes
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#soluciones" class="block text-slate-300 hover:text-emerald-400">Soluciones</a>
+            <a href="#precios" class="block text-slate-300 hover:text-emerald-400">Precios</a>
+            <a href="#contacto" class="block text-slate-300 hover:text-emerald-400">Contacto</a>
+            <a href="#" class="block mt-2 bg-emerald-500 text-white text-center font-bold py-2 px-4 rounded-lg">Acceso Clientes</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 px-4 text-center">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">Automatizamos tus procesos y generamos clientes en <span class="text-emerald-400">piloto automático</span></h1>
+            <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Conectamos tus sistemas, ahorramos horas de trabajo manual y te entregamos más clientes listos para comprar.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">
+                    📲 Hablar por WhatsApp
+                </a>
+                <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
+                    📅 Agenda una demo gratis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="que-hacemos" class="py-20 px-4 bg-slate-800">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold mb-6 text-white tracking-tight">¿Qué Hacemos?</h2>
+            <p class="text-slate-300 text-lg md:text-xl">
+                Somos una agencia de automatización en Panamá. Usamos tecnología inteligente para conectar tus aplicaciones y crear flujos automáticos que trabajan por ti 24/7. Olvídate de tareas manuales: nuestros sistemas capturan leads, responden consultas, confirman citas y te avisan en tiempo real.
+            </p>
+        </div>
+    </section>
+
+    <!-- Solutions by Industry Section -->
+    <section id="soluciones" class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Soluciones Interactivas por Industria</h2>
+            <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">Haz clic en una industria para descubrir los flujos que podemos automatizar para ti.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Inmobiliarias -->
+                <button id="inmobiliarias" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Inmobiliarias</h3>
+                    <p class="text-slate-400">Captura de interesados + alertas instantáneas.</p>
+                </button>
+                <!-- Restaurantes y Hoteles -->
+                <button id="restaurantes" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Restaurantes y Hoteles</h3>
+                    <p class="text-slate-400">Reservas automáticas + respuesta 24/7 en WhatsApp.</p>
+                </button>
+                <!-- Clínicas -->
+                <button id="clinicas" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Clínicas</h3>
+                    <p class="text-slate-400">Recordatorios de citas + gestión de pacientes.</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Solutions -->
+    <div id="modal-container" class="modal-overlay fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <div class="modal-content bg-slate-800 border border-slate-700 p-8 rounded-lg shadow-2xl max-w-2xl w-full relative">
+            <button id="close-modal" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="text-center mb-6">
+                <h3 id="modal-title" class="text-3xl font-bold mb-2 text-emerald-400"></h3>
+                <p id="modal-description" class="text-slate-300"></p>
+            </div>
+            <ul id="modal-features" class="space-y-3 text-slate-200"></ul>
+        </div>
+    </div>
+    
+    <!-- Pricing Section -->
+    <section id="precios" class="py-20 px-4 bg-slate-800">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Planes y Precios</h2>
+            <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-slate-900 p-8 rounded-lg border border-slate-700 w-full lg:max-w-sm flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Plan Básico</h3>
+                    <p class="text-slate-400 mb-6">Para empezar a automatizar.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-white">$100</span><span class="text-slate-400">/mes</span>
+                        <p class="text-sm text-slate-300 mt-1">Setup inicial: $300</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 flujo automatizado</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Hosting + soporte básico</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reporte mensual</li>
+                    </ul>
+                    <a href="#contacto" class="w-full block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">Empezar con Básico</a>
+                </div>
+                <!-- Pro Plan -->
+                <div class="bg-slate-900 p-8 rounded-lg border-2 border-emerald-500 w-full lg:max-w-sm flex flex-col relative">
+                    <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-500 text-white rounded-full text-sm font-bold tracking-wider">Más popular</span>
+                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Plan Pro</h3>
+                    <p class="text-slate-400 mb-6">Para una automatización completa.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-white">$200</span><span class="text-slate-400">/mes</span>
+                        <p class="text-sm text-slate-300 mt-1">Setup inicial: $600</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 flujos automatizados</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integración con APIs o scraping</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Soporte prioritario + optimizaciones</li>
+                    </ul>
+                    <a href="#contacto" class="w-full block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">Empezar con Pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 px-4">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para automatizar tu negocio?</h2>
+            <p class="text-slate-400 mb-8">Deja tus datos y un especialista te contactará para una asesoría gratuita.</p>
+            
+            <form action="#" method="POST" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                </div>
+                <div class="mb-6">
+                    <textarea id="message" name="message" rows="4" placeholder="Mensaje" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                </div>
+                <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6 px-4 text-center">
+        <p class="text-slate-400">&copy; 2025 AfluxSI. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Modal Functionality
+            const solutionCards = document.querySelectorAll('.solution-card');
+            const modalContainer = document.getElementById('modal-container');
+            const closeModalBtn = document.getElementById('close-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalFeatures = document.getElementById('modal-features');
+
+            const industryData = {
+                inmobiliarias: {
+                    title: "Flujos para Inmobiliarias",
+                    description: "Captura, califica y gestiona leads de forma inteligente para cerrar más ventas. ¡Olvídate del trabajo manual!",
+                    features: [
+                        "Captura de leads de Facebook e Instagram en automático.",
+                        "Flujos de seguimiento por email y WhatsApp.",
+                        "Notificaciones instantáneas para agentes de venta.",
+                        "Actualización de estatus de propiedades en tiempo real.",
+                        "Integración con CRM para un control total."
+                    ]
+                },
+                restaurantes: {
+                    title: "Flujos para Restaurantes y Hoteles",
+                    description: "Optimiza la gestión de reservas y fideliza a tus clientes con una atención personalizada y automática.",
+                    features: [
+                        "Sistema de reservas automáticas 24/7.",
+                        "Respuestas automáticas a consultas comunes en WhatsApp.",
+                        "Recordatorios de citas o reservas para reducir ausencias.",
+                        "Encuestas de satisfacción post-visita.",
+                        "Envío de promociones especiales por cumpleaños."
+                    ]
+                },
+                clinicas: {
+                    title: "Flujos para Clínicas",
+                    description: "Mejora la experiencia de tus pacientes y optimiza la gestión interna con flujos de trabajo inteligentes.",
+                    features: [
+                        "Recordatorios de citas automáticos por WhatsApp y SMS.",
+                        "Gestión de pacientes y historial médico.",
+                        "Solicitud de evaluaciones y reseñas en línea.",
+                        "Notificaciones sobre cambios de horario o promociones.",
+                        "Registro de nuevos pacientes vía formulario web."
+                    ]
+                }
+            };
+
+            solutionCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const id = card.id;
+                    const data = industryData[id];
+
+                    if (data) {
+                        modalTitle.textContent = data.title;
+                        modalDescription.textContent = data.description;
+                        modalFeatures.innerHTML = '';
+                        data.features.forEach(featureText => {
+                            const li = document.createElement('li');
+                            li.className = 'flex items-start';
+                            li.innerHTML = `<svg class="w-5 h-5 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>${featureText}</span>`;
+                            modalFeatures.appendChild(li);
+                        });
+                        modalContainer.classList.add('active');
+                    }
+                });
+            });
+
+            const closeModal = () => {
+                modalContainer.classList.remove('active');
+            };
+
+            closeModalBtn.addEventListener('click', closeModal);
+            modalContainer.addEventListener('click', (e) => {
+                if (e.target.id === 'modal-container') {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

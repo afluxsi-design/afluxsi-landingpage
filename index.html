@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AfluxSI | Automatización de Negocios en Panamá</title>
+    <title>AfluxSI | Automatización Inteligente para PYMES en Panamá</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -59,7 +57,6 @@
 </head>
 <body>
 
-    <!-- Header -->
     <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold text-white">Aflux<span class="text-emerald-400">SI</span></a>
@@ -71,14 +68,12 @@
                     Acceso Clientes
                 </button>
             </div>
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
         </nav>
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
             <a href="#soluciones" class="block text-slate-300 hover:text-emerald-400">Soluciones</a>
             <a href="#precios" class="block text-slate-300 hover:text-emerald-400">Precios</a>
@@ -87,115 +82,152 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero-gradient text-white py-24 px-4 text-center">
         <div class="container mx-auto max-w-4xl">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">Automatizamos tus procesos y generamos clientes en <span class="text-emerald-400">piloto automático</span></h1>
-            <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Conectamos tus sistemas, ahorramos horas de trabajo manual y te entregamos más clientes listos para comprar.</p>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">Deja de 'Copiar y Pegar'. Conectamos las herramientas que <span class="text-emerald-400">ya usas</span> para que tu negocio funcione en automático.</h1>
+            <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Somos tu Socio de Eficiencia Operativa en Panamá. Maximizamos el retorno de tu inversión en tecnología, eliminando tareas manuales y silos de datos para que tu equipo pueda enfocarse en crecer.</p>
             <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">
+                <button id="open-audit-modal-hero" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">
+                    🔎 Solicitar Auditoría Gratis
+                </button>
+                <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
                     📲 Hablar por WhatsApp
-                </a>
-                <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">
-                    📅 Agenda una demo gratis
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- What We Do Section -->
     <section id="que-hacemos" class="py-20 px-4 bg-slate-800">
         <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-4xl font-bold mb-6 text-white tracking-tight">¿Qué Hacemos?</h2>
+            <h2 class="text-4xl font-bold mb-6 text-white tracking-tight">Resolvemos el "Caos Digital" de tu Empresa</h2>
             <p class="text-slate-300 text-lg md:text-xl">
-                Somos una agencia de automatización en Panamá. Usamos tecnología inteligente para conectar tus aplicaciones y crear flujos automáticos que trabajan por ti 24/7. Olvídate de tareas manuales: nuestros sistemas capturan leads, responden consultas, confirman citas y te avisan en tiempo real.
+                Tu negocio en Panamá usa múltiples herramientas digitales... pero ¿se comunican entre sí? Nosotros construimos el 'pegamento digital' que une tu marketing, CRM, facturación y operaciones. Eliminamos los costos operativos ocultos para que dejes de perder tiempo en tareas manuales y empieces a operar con máxima eficiencia.
             </p>
         </div>
     </section>
 
-    <!-- Solutions by Industry Section -->
     <section id="soluciones" class="py-20 px-4">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Soluciones Interactivas por Industria</h2>
-            <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">Haz clic en una industria para descubrir los flujos que podemos automatizar para ti.</p>
+            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Soluciones de Alto Impacto por Industria</h2>
+            <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">Haz clic en tu industria para descubrir los flujos de trabajo que podemos implementar para ti.</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Inmobiliarias -->
                 <button id="inmobiliarias" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
                     <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Inmobiliarias</h3>
-                    <p class="text-slate-400">Captura de interesados + alertas instantáneas.</p>
+                    <p class="text-slate-400">Captura de leads + alertas instantáneas a agentes.</p>
                 </button>
-                <!-- Restaurantes y Hoteles -->
-                <button id="restaurantes" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                <button id="logistica" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
                     <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8zM13 16h6l-3-3h-3v3z"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Restaurantes y Hoteles</h3>
-                    <p class="text-slate-400">Reservas automáticas + respuesta 24/7 en WhatsApp.</p>
+                    <h3 class="text-xl font-bold text-white mb-2">Logística y Transporte</h3>
+                    <p class="text-slate-400">Seguimiento de envíos + notificaciones a clientes.</p>
                 </button>
-                <!-- Clínicas -->
                 <button id="clinicas" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
                     <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Clínicas</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">Clínicas y Salud</h3>
                     <p class="text-slate-400">Recordatorios de citas + gestión de pacientes.</p>
+                </button>
+                <button id="ecommerce" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">E-commerce y Tiendas</h3>
+                    <p class="text-slate-400">Sincronización de inventario + carritos abandonados.</p>
+                </button>
+                <button id="constructores" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Constructores y Distribuidores</h3>
+                    <p class="text-slate-400">Alertas de licitaciones + seguimiento a proveedores.</p>
+                </button>
+                <button id="servicios" class="solution-card bg-slate-800 p-8 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 hover:border-emerald-500 border border-slate-700 group">
+                    <div class="bg-emerald-900/50 text-emerald-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-emerald-500/20">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Servicios Profesionales</h3>
+                    <p class="text-slate-400">Gestión de consultas + recordatorios automáticos.</p>
                 </button>
             </div>
         </div>
     </section>
+
+    <section id="auditoria" class="py-20 px-4 bg-slate-800">
+        <div class="container mx-auto max-w-4xl text-center bg-slate-900 border-2 border-emerald-500/50 rounded-lg p-10 shadow-2xl">
+            <h2 class="text-3xl font-bold mb-4 text-white">Descubre tu Potencial de Automatización</h2>
+            <p class="text-slate-300 mb-8 text-lg">¿No estás seguro por dónde empezar? En una llamada de 15 minutos, identificaremos el proceso manual que más tiempo te cuesta y te propondremos un plan de acción inmediato. Sin costo, sin compromiso.</p>
+            <button id="open-audit-modal-cta" class="btn-gradient text-white font-bold py-4 px-10 rounded-lg shadow-lg hover:scale-105 transition-transform text-lg">
+                Sí, ¡Quiero mi Auditoría Gratuita!
+            </button>
+        </div>
+    </section>
     
-    <!-- Pricing Section -->
-    <section id="precios" class="py-20 px-4 bg-slate-800">
+    <section id="precios" class="py-20 px-4">
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Planes y Precios</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Nuestros Modelos de Servicio</h2>
             <div class="flex flex-col lg:flex-row justify-center items-stretch gap-8">
-                <!-- Basic Plan -->
-                <div class="bg-slate-900 p-8 rounded-lg border border-slate-700 w-full lg:max-w-sm flex flex-col">
-                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Plan Básico</h3>
-                    <p class="text-slate-400 mb-6">Para empezar a automatizar.</p>
+             
+                <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 w-full lg:max-w-sm flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Auditoría "Quick Win"</h3>
+                    <p class="text-slate-400 mb-6">Prueba el poder de la automatización con bajo riesgo.</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-extrabold text-white">$100</span><span class="text-slate-400">/mes</span>
-                        <p class="text-sm text-slate-300 mt-1">Setup inicial: $300</p>
+                        <span class="text-4xl font-extrabold text-white">$500 - $1,500</span>
+                        <p class="text-sm text-slate-300 mt-1">Pago único</p>
                     </div>
                     <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 flujo automatizado</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Hosting + soporte básico</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Reporte mensual</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Taller de descubrimiento para mapear tu proceso más crítico.</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Implementación de 1 flujo de trabajo de alto impacto.</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Demostración de ROI inmediato y tangible.</span></li>
                     </ul>
-                    <button id="open-basic-plan-modal" class="w-full block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">
-                        Ver Detalles del Plan
-                    </button>
+                    <a href="#contacto" class="w-full block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">
+                        Empezar mi Auditoría
+                    </a>
                 </div>
-                <!-- Pro Plan -->
-                <div class="bg-slate-900 p-8 rounded-lg border-2 border-emerald-500 w-full lg:max-w-sm flex flex-col relative">
+                <div class="bg-slate-800 p-8 rounded-lg border-2 border-emerald-500 w-full lg:max-w-sm flex flex-col relative">
                     <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-500 text-white rounded-full text-sm font-bold tracking-wider">Más popular</span>
-                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Plan Pro</h3>
-                    <p class="text-slate-400 mb-6">Para una automatización completa.</p>
+                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Automatización como Servicio</h3>
+                    <p class="text-slate-400 mb-6">Tu socio de eficiencia a largo plazo.</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-extrabold text-white">$200</span><span class="text-slate-400">/mes</span>
-                        <p class="text-sm text-slate-300 mt-1">Setup inicial: $600</p>
+                        <span class="text-4xl font-extrabold text-white">Desde $1,000</span><span class="text-slate-400">/mes</span>
                     </div>
                     <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>3 flujos automatizados</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Integración con APIs o scraping</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 mr-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Soporte prioritario + optimizaciones</li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Desarrollo continuo (hasta 5 flujos nuevos al mes).</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Monitoreo proactivo y mantenimiento prioritario.</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Reuniones estratégicas mensuales para optimización.</span></li>
                     </ul>
-                    <button id="open-pro-plan-modal" class="w-full block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">
-                        Ver Detalles del Plan
-                    </button>
+                    <a href="#contacto" class="w-full block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">
+                        Contratar AaaS
+                    </a>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 w-full lg:max-w-sm flex flex-col">
+                    <h3 class="text-2xl font-bold mb-2 text-emerald-400">Agentes de IA a Medida</h3>
+                    <p class="text-slate-400 mb-6">Soluciones para desafíos complejos.</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-extrabold text-white">Desde $2,500</span>
+                         <p class="text-sm text-slate-300 mt-1">Por proyecto</p>
+                    </div>
+                    <ul class="space-y-4 mb-8 text-slate-300 flex-grow">
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Chatbots conversacionales avanzados para soporte y ventas.</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Asistentes internos que consultan bases de conocimiento.</span></li>
+                        <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-emerald-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>Implementación e integración de IA en tus procesos.</span></li>
+                    </ul>
+                    <a href="#contacto" class="w-full block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">
+                        Solicitar Cotización
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Contact Section -->
     <section id="contacto" class="py-20 px-4">
         <div class="container mx-auto max-w-2xl text-center">
-            <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para automatizar tu negocio?</h2>
-            <p class="text-slate-400 mb-8">Deja tus datos y un especialista te contactará para una asesoría gratuita.</p>
+            <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para escalar tu negocio?</h2>
+            <p class="text-slate-400 mb-8">Deja tus datos aquí. Un especialista te contactará para agendar tu asesoría gratuita y definir el primer paso para transformar tu operación.</p>
             
             <form id="contact-form" action="https://formspree.io/f/mqkvpkyv" method="POST" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -203,14 +235,13 @@
                     <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                 </div>
                 <div class="mb-6">
-                    <textarea id="message" name="message" rows="4" placeholder="Mensaje" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Cuéntanos brevemente sobre tu negocio y el proceso que te gustaría automatizar." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
                 </div>
-                <!-- Status message area -->
                 <div id="form-status" class="mb-4 text-center font-medium"></div>
                 <button type="submit" id="submit-button" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">
-                    <span id="submit-text">Enviar mensaje</span>
+                    <span id="submit-text">Enviar Mensaje</span>
                     <span id="loading-spinner" class="hidden animate-spin h-5 w-5 text-white inline-block">
-                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                         <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                             <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.062 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
@@ -220,14 +251,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-900 border-t border-slate-800 py-6 px-4 text-center">
         <p class="text-slate-400">&copy; 2025 AfluxSI. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- MODALS SECTION -->
-    
-    <!-- Modal for Solutions -->
     <div id="solution-modal-container" class="modal-overlay">
         <div class="modal-content bg-slate-800 border border-slate-700 p-8 rounded-lg shadow-2xl max-w-2xl w-full relative">
             <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
@@ -241,106 +268,77 @@
         </div>
     </div>
 
-    <!-- Modal for Basic Plan -->
-    <div id="basic-plan-modal-container" class="modal-overlay">
-        <div class="modal-content bg-slate-800 p-8 md:p-12 rounded-lg shadow-2xl border border-slate-700 max-w-4xl w-full relative">
-            <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-tight">Plan Básico</h1>
-                <p class="text-3xl font-bold text-emerald-400 mb-2">$300 setup</p>
-                <p class="text-xl font-medium text-slate-300 mb-8">+ $100/mes</p>
-                <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-10">Este plan es perfecto para emprendedores y negocios pequeños que quieren dar sus primeros pasos en la automatización y empezar a capturar leads de manera eficiente.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-8">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 text-white">Características del plan</h3>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">1 flujo automatizado:</span> Ej. captura de leads desde tu página web.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">Hosting y soporte básico:</span> Mantenimiento del flujo en línea.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">Reporte mensual:</span> Resumen del rendimiento del flujo.</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 text-white">Lo que obtienes</h3>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Ahorro de 5-10 horas de trabajo manual al mes.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><span>Más leads en tu bandeja de entrada listos para contactar.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Un sistema que trabaja 24/7, incluso cuando no estás.</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="#contacto" class="inline-block mt-12 btn-gradient text-white font-bold py-3 px-10 rounded-lg hover:scale-105 transition-transform tracking-wide">Contratar Plan Básico</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Pro Plan -->
-    <div id="pro-plan-modal-container" class="modal-overlay">
-        <div class="modal-content bg-slate-800 p-8 md:p-12 rounded-lg shadow-2xl border-2 border-emerald-500 max-w-4xl w-full relative">
-            <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-tight">Plan Pro</h1>
-                <p class="text-3xl font-bold text-emerald-400 mb-2">$600 setup</p>
-                <p class="text-xl font-medium text-slate-300 mb-8">+ $200/mes</p>
-                <p class="text-slate-300 text-lg max-w-2xl mx-auto mb-10">Este plan es ideal para empresas que necesitan una solución completa y personalizada, con múltiples flujos de trabajo automatizados para escalar su operación.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mt-8">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 text-white">Características del plan</h3>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">3 flujos automatizados:</span> Ej. web + WhatsApp + CRM.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">Integración con APIs o scraping:</span> Conecta cualquier sistema que necesites.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span><span class="font-semibold text-white">Soporte prioritario y optimizaciones:</span> Reacción rápida a cualquier incidente.</span></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 text-white">Lo que obtienes</h3>
-                        <ul class="space-y-3 text-slate-300">
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Ahorro de más de 20 horas de trabajo manual al mes.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><span>Flujo constante de clientes potenciales listos para convertir.</span></li>
-                            <li class="flex items-start"><svg class="w-6 h-6 mr-3 text-slate-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Optimización continua del sistema para obtener mejores resultados.</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="#contacto" class="inline-block mt-12 btn-gradient text-white font-bold py-3 px-10 rounded-lg hover:scale-105 transition-transform tracking-wide">Contratar Plan Pro</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Login -->
-    <div id="login-modal-container" class="modal-overlay">
+    <div id="audit-modal-container" class="modal-overlay">
         <div class="modal-content w-full max-w-md">
             <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
                 <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
                 </button>
+                <h1 class="text-3xl font-bold text-center text-white mb-2">Solicita tu Auditoría Gratuita</h1>
+                <p class="text-center text-slate-400 mb-8">Completa tus datos para agendar tu sesión estratégica.</p>
+                
+                <form id="audit-form" action="https://formspree.io/f/mqkvpkyv" method="POST" class="space-y-6">
+                    <div>
+                        <label for="audit-name" class="text-sm font-medium text-slate-300 block mb-2">Nombre Completo</label>
+                        <input type="text" id="audit-name" name="name" placeholder="Tu nombre" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    </div>
+                    <div>
+                        <label for="audit-email" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
+                        <input type="email" id="audit-email" name="email" placeholder="tu@empresa.com" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    </div>
+                    <div>
+                        <label for="audit-challenge" class="text-sm font-medium text-slate-300 block mb-2">¿Cuál es tu mayor desafío manual o repetitivo?</label>
+                        <textarea id="audit-challenge" name="challenge" rows="3" placeholder="Ej: 'Copiar los datos de mis clientes de WhatsApp a un Excel...'" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                    </div>
+                    <div id="audit-form-status" class="mb-4 text-center font-medium"></div>
+                    <div>
+                        <button type="submit" id="audit-submit-button" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">
+                            <span id="audit-submit-text">Agendar mi Sesión</span>
+                            <span id="audit-loading-spinner" class="hidden animate-spin h-5 w-5 text-white inline-block">
+                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.062 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="login-modal-container" class="modal-overlay">
+        <div class="modal-content w-full max-w-md">
+            <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
+                 <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
                 <h1 class="text-3xl font-bold text-center text-white mb-2">Acceso a tu Portal</h1>
-                <p class="text-center text-slate-400 mb-8">Ingresa tus credenciales para ver tus flujos.</p>
+                 <p class="text-center text-slate-400 mb-8">Ingresa tus credenciales para ver tus flujos.</p>
                 
                 <form action="#" method="POST" class="space-y-6">
                     <div>
-                        <label for="email" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
+                        <label for="email-login" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
                         <input type="email" id="email-login" name="email" placeholder="tu@empresa.com" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                     </div>
                     <div>
-                        <label for="password" class="text-sm font-medium text-slate-300 block mb-2">Contraseña</label>
+                         <label for="password-login" class="text-sm font-medium text-slate-300 block mb-2">Contraseña</label>
                         <input type="password" id="password-login" name="password" placeholder="••••••••" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
                             <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 bg-slate-700 border-slate-600 text-emerald-600 focus:ring-emerald-500 rounded">
                             <label for="remember-me" class="ml-2 block text-sm text-slate-400">Recordarme</label>
-                        </div>
+                         </div>
                         <div class="text-sm">
                             <a href="#" class="font-medium text-emerald-500 hover:text-emerald-400">¿Olvidaste tu contraseña?</a>
-                        </div>
+                     </div>
                     </div>
                     <div>
                         <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Ingresar</button>
                     </div>
-                </form>
+                 </form>
             </div>
         </div>
     </div>
@@ -357,7 +355,6 @@
                     modal.classList.remove('active');
                 }
             };
-            
             const openModal = (modal) => {
                 if (modal) {
                     modal.classList.add('active');
@@ -376,30 +373,33 @@
                         closeModal(modal);
                     }
                 });
-                // Close modal with contact link
                 modal.querySelectorAll('a[href^="#contacto"]').forEach(link => {
                     link.addEventListener('click', () => closeModal(modal));
                 });
             });
-
+            
             // --- Mobile Menu Toggle ---
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
-
+            
             // --- Solution Modal ---
             const solutionCards = document.querySelectorAll('.solution-card');
             const solutionModal = document.getElementById('solution-modal-container');
             const solutionModalTitle = document.getElementById('solution-modal-title');
             const solutionModalDescription = document.getElementById('solution-modal-description');
             const solutionModalFeatures = document.getElementById('solution-modal-features');
-
+            
+            // NEW: Expanded industry data based on research
             const industryData = {
-                inmobiliarias: { title: "Flujos para Inmobiliarias", description: "Captura, califica y gestiona leads de forma inteligente para cerrar más ventas.", features: ["Captura de leads de Facebook e Instagram en automático.", "Flujos de seguimiento por email y WhatsApp.", "Notificaciones instantáneas para agentes de venta.", "Integración con CRM para un control total."] },
-                restaurantes: { title: "Flujos para Restaurantes y Hoteles", description: "Optimiza la gestión de reservas y fideliza a tus clientes con una atención personalizada y automática.", features: ["Sistema de reservas automáticas 24/7.", "Respuestas automáticas a consultas comunes en WhatsApp.", "Recordatorios de citas o reservas para reducir ausencias.", "Encuestas de satisfacción post-visita."] },
-                clinicas: { title: "Flujos para Clínicas", description: "Mejora la experiencia de tus pacientes y optimiza la gestión interna con flujos de trabajo inteligentes.", features: ["Recordatorios de citas automáticos por WhatsApp y SMS.", "Gestión de pacientes y historial médico.", "Solicitud de evaluaciones y reseñas en línea.", "Registro de nuevos pacientes vía formulario web."] }
+                inmobiliarias: { title: "Flujos para Inmobiliarias", description: "Captura, califica y asigna leads en segundos para que tus agentes se enfoquen en vender, no en tareas manuales.", features: ["Captura automática de leads desde portales y redes sociales.", "Asignación instantánea de leads a agentes vía WhatsApp/Email.", "Secuencias de seguimiento automáticas para nutrir prospectos.", "Agendamiento de visitas directo en el calendario del agente."] },
+                logistica: { title: "Flujos para Logística y Transporte", description: "Optimiza la comunicación y la gestión de envíos, reduciendo costos operativos y mejorando la satisfacción del cliente.", features: ["Notificaciones automáticas de estado de envío para clientes.", "Generación automática de facturas al confirmar entrega.", "Integración entre sistemas de almacén (WMS) y contabilidad.", "Chatbot de soporte para responder '¿Dónde está mi envío?' 24/7."] },
+                clinicas: { title: "Flujos para Clínicas y Salud", description: "Reduce las ausencias y la carga administrativa, mejorando la experiencia del paciente desde la cita hasta el seguimiento.", features: ["Recordatorios de citas automáticos por WhatsApp y Email.", "Confirmación y reprogramación de citas en un clic.", "Encuestas de satisfacción y solicitud de reseñas post-consulta.", "Gestión y segmentación de base de datos de pacientes."] },
+                ecommerce: { title: "Flujos para E-commerce", description: "Aumenta tus ventas y libera a tu equipo de soporte con automatizaciones que trabajan día y noche.", features: ["Recuperación de carritos abandonados con secuencias multicanal.", "Sincronización de inventario en tiempo real entre Shopify, Instagram, etc.", "Alertas automáticas de stock bajo.", "Chatbot de IA para responder preguntas frecuentes sobre pedidos y productos."] },
+                constructores: { title: "Flujos para Constructores", description: "Sé el primero en enterarte de nuevas oportunidades y gestiona tus proyectos y proveedores con máxima eficiencia.", features: ["Scraping de portales de licitaciones con alertas automáticas.", "Captura de leads desde portales de proveedores.", "Seguimiento automático a contactos de contratistas.", "Asignación automática de tareas y seguimiento a equipo de ventas."] },
+                servicios: { title: "Flujos para Servicios Profesionales", description: "Nunca más pierdas un cliente potencial por falta de seguimiento. Profesionaliza la captación y gestión de tus casos.", features: ["Registro automático de consultas desde la web a tu CRM.", "Recordatorios automáticos de reuniones y fechas de entrega.", "Envío de newsletters automatizadas para fidelizar clientes.", "Asignación automática de nuevos casos al especialista adecuado."] }
             };
 
             solutionCards.forEach(card => {
@@ -419,69 +419,74 @@
                     }
                 });
             });
-
-            // --- Pricing Plan Modals ---
-            const basicPlanModal = document.getElementById('basic-plan-modal-container');
-            const proPlanModal = document.getElementById('pro-plan-modal-container');
-            document.getElementById('open-basic-plan-modal').addEventListener('click', () => openModal(basicPlanModal));
-            document.getElementById('open-pro-plan-modal').addEventListener('click', () => openModal(proPlanModal));
+            
+            // --- Audit Modal ---
+            const auditModal = document.getElementById('audit-modal-container');
+            document.getElementById('open-audit-modal-hero').addEventListener('click', () => openModal(auditModal));
+            document.getElementById('open-audit-modal-cta').addEventListener('click', () => openModal(auditModal));
             
             // --- Login Modal ---
             const loginModal = document.getElementById('login-modal-container');
             document.getElementById('open-login-modal-desktop').addEventListener('click', () => openModal(loginModal));
             document.getElementById('open-login-modal-mobile').addEventListener('click', () => openModal(loginModal));
 
-            // --- Formspree Integration for Contact Form ---
-            const form = document.getElementById('contact-form');
-            const formStatus = document.getElementById('form-status');
-            const submitButton = document.getElementById('submit-button');
-            const submitText = document.getElementById('submit-text');
-            const loadingSpinner = document.getElementById('loading-spinner');
-
-            form.addEventListener("submit", async (e) => {
-                e.preventDefault();
-                
-                // Show loading state
-                submitText.textContent = 'Enviando...';
-                submitButton.disabled = true;
-                loadingSpinner.classList.remove('hidden');
-                formStatus.textContent = '';
-                
-                const data = new FormData(e.target);
+            // --- Formspree Integration for BOTH Contact and Audit Forms ---
+            const handleFormSubmit = async (form, formStatus, submitButton, submitText, loadingSpinner) => {
+                const data = new FormData(form);
                 try {
-                    const response = await fetch(e.target.action, {
+                    const response = await fetch(form.action, {
                         method: form.method,
                         body: data,
-                        headers: {
-                            'Accept': 'application/json'
-                        }
+                        headers: { 'Accept': 'application/json' }
                     });
 
                     if (response.ok) {
                         formStatus.textContent = "¡Mensaje enviado con éxito! Te contactaremos pronto.";
-                        formStatus.className = "mb-4 text-center font-medium text-emerald-500";
+                        formStatus.className = "text-center font-medium text-emerald-500";
                         form.reset();
                     } else {
                         const responseData = await response.json();
-                        if (responseData.errors) {
-                            formStatus.textContent = responseData.errors.map(error => error.message).join(", ");
-                        } else {
-                            formStatus.textContent = "Oops! Hubo un problema al enviar tu mensaje.";
-                        }
-                        formStatus.className = "mb-4 text-center font-medium text-red-500";
+                        formStatus.textContent = responseData.errors ? responseData.errors.map(e => e.message).join(", ") : "Oops! Hubo un problema al enviar tu mensaje.";
+                        formStatus.className = "text-center font-medium text-red-500";
                     }
                 } catch (error) {
                     formStatus.textContent = "Oops! Hubo un problema de conexión. Inténtalo de nuevo más tarde.";
-                    formStatus.className = "mb-4 text-center font-medium text-red-500";
+                    formStatus.className = "text-center font-medium text-red-500";
                 } finally {
                     // Reset loading state
-                    submitText.textContent = 'Enviar mensaje';
+                    submitText.textContent = submitButton.querySelector('span:first-child').dataset.originalText;
                     submitButton.disabled = false;
                     loadingSpinner.classList.add('hidden');
                 }
-            });
+            };
+            
+            const setupForm = (formId, statusId, buttonId, textId, spinnerId) => {
+                const form = document.getElementById(formId);
+                if (!form) return;
+                
+                const formStatus = document.getElementById(statusId);
+                const submitButton = document.getElementById(buttonId);
+                const submitText = document.getElementById(textId);
+                const loadingSpinner = document.getElementById(spinnerId);
+
+                submitText.dataset.originalText = submitText.textContent;
+
+                form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+                    
+                    // Show loading state
+                    submitText.textContent = 'Enviando...';
+                    submitButton.disabled = true;
+                    loadingSpinner.classList.remove('hidden');
+                    formStatus.textContent = '';
+                    
+                    handleFormSubmit(form, formStatus, submitButton, submitText, loadingSpinner);
+                });
+            };
+
+            setupForm('contact-form', 'form-status', 'submit-button', 'submit-text', 'loading-spinner');
+            setupForm('audit-form', 'audit-form-status', 'audit-submit-button', 'audit-submit-text', 'audit-loading-spinner');
         });
     </script>
 </body>
 </html>
-

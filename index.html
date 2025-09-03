@@ -447,11 +447,12 @@
                         formStatus.className = "text-center font-medium text-emerald-500";
                         form.reset();
                     } else {
-                        const responseData = await response.json();
-                        formStatus.textContent = responseData.errors ? responseData.errors.map(e => e.message).join(", ") : "Oops! Hubo un problema al enviar tu mensaje.";
+                        formStatus.textContent = "Oops! Hubo un problema al enviar tu mensaje.";
                         formStatus.className = "text-center font-medium text-red-500";
                     }
                 } catch (error) {
+                    // --- CAMBIO CLAVE: AÑADIR DIAGNÓSTICO A LA CONSOLA ---
+                    console.error("Error detallado de envío del formulario:", error);
                     formStatus.textContent = "Oops! Hubo un problema de conexión. Inténtalo de nuevo más tarde.";
                     formStatus.className = "text-center font-medium text-red-500";
                 } finally {
@@ -492,5 +493,4 @@
     </script>
 </body>
 </html>
-
 

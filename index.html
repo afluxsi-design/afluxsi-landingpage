@@ -23,55 +23,6 @@
         .modal-overlay.active .modal-content { transform: scale(1) translateY(0); opacity: 1; }
         .solution-card:hover { border-color: #9333ea; }
     </style>
-    <!-- FORMULARIO DE CONTACTO -->
-<form id="contact-form" action="https://formspree.io/f/mqkvpkyv" method="POST" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-    <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-    <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-  </div>
-  <div class="mb-6">
-    <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu negocio y qué proceso te gustaría automatizar..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-  </div>
-  <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Enviar Mensaje</button>
-</form>
-
-<!-- NOTIFICACIÓN -->
-<div id="form-notification" class="fixed bottom-6 right-6 bg-emerald-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-500">
-  ✅ ¡Gracias por contactarnos en <strong>AfluxSI</strong>! Te responderemos pronto.
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-form');
-  const notification = document.getElementById('form-notification');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        form.reset();
-        // Mostrar notificación
-        notification.classList.remove('opacity-0', 'pointer-events-none');
-        setTimeout(() => {
-          notification.classList.add('opacity-0', 'pointer-events-none');
-        }, 4000);
-      } else {
-        alert("Hubo un problema al enviar el mensaje. Intenta nuevamente.");
-      }
-    } catch (error) {
-      alert("Error de conexión. Verifica tu red.");
-    }
-  });
-});
-</script>
-
 </head>
 <body>
     <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
@@ -101,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">Tu Negocio, en Piloto Automático. Deja de 'Copiar y Pegar', Empieza a Crecer.</h1>
                 <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Somos tu Socio de Eficiencia Operativa en Panamá. Diseñamos <strong>Secuencias Inteligentes</strong> que conectan tus sistemas, eliminan tareas manuales y liberan a tu equipo para que se enfoque en lo que realmente importa: tus clientes.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#auditoria" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">Descubrir mi Potencial</a>
-                    <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Hablar por WhatsApp</a>
-                    <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar Cita</a>
+                    <a href="#auditoria" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">¡Quiero mi Auditoría GRATIS!</a>
+                    <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
+                    <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
                 </div>
             </div>
         </section>
@@ -155,13 +106,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h3 class="text-2xl font-bold mb-2 text-emerald-400">Automatización como Servicio</h3>
                         <p class="text-slate-400 mb-6 flex-grow">Tu socio de eficiencia a largo plazo para una optimización continua.</p>
                         <div class="mb-6"><span class="text-4xl font-extrabold text-white">Desde $1,000</span><span class="text-slate-400">/mes</span></div>
-                        <a href="#contacto" class="w-full mt-auto block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">Contratar AaaS</a>
+                        <a href="#contacto" class="w-full mt-auto block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">Impulsar mi Crecimiento</a>
                     </div>
                     <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 flex flex-col">
                         <h3 class="text-2xl font-bold mb-2 text-emerald-400">Agentes de IA a Medida</h3>
                         <p class="text-slate-400 mb-6 flex-grow">Soluciones avanzadas para desafíos de negocio complejos.</p>
                         <div class="mb-6"><span class="text-4xl font-extrabold text-white">Desde $2,500</span><p class="text-sm text-slate-300 mt-1">Por proyecto</p></div>
-                        <a href="#contacto" class="w-full mt-auto block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">Solicitar Cotización</a>
+                        <a href="#contacto" class="w-full mt-auto block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">Diseñar mi Solución a Medida</a>
                     </div>
                     <div class="bg-slate-800 p-8 rounded-lg border border-dashed border-purple-400 flex flex-col">
                         <h3 class="text-2xl font-bold mb-2 text-purple-400">Plan Premium</h3>
@@ -178,16 +129,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para automatizar tu negocio?</h2>
                 <p class="text-slate-400 mb-8">Deja tus datos y un especialista te contactará para una asesoría gratuita.</p>
                 
-                <form id="contact-form" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
-                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                     </div>
-                    <div class="mb-6">
-                        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu negocio y qué proceso te gustaría automatizar..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                    </div>
-                    <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Enviar Mensaje</button>
-                </form>
+                <div id="form-container" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
+                    <form id="contact-form" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                             <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                             <input type="email" id="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                         </div>
+                         <div class="mb-6">
+                             <textarea id="message" name="message" rows="4" placeholder="Cuéntanos sobre tu negocio y qué proceso te gustaría automatizar..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                         </div>
+                         <button type="submit" id="submit-button" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                            <span>Recibir mi Asesoría Gratuita</span>
+                            <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </section>
     </main>
@@ -299,245 +259,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.getElementById('open-login-modal-desktop').addEventListener('click', () => openModal(document.getElementById('login-modal-container')));
             document.getElementById('open-login-modal-mobile').addEventListener('click', () => openModal(document.getElementById('login-modal-container')));
-        });
-    </script>
-</body>
-</html>    <div id="solution-modal-container" class="modal-overlay">
-        <div class="modal-content bg-slate-800 border border-slate-700 p-8 rounded-lg shadow-2xl max-w-2xl w-full relative">
-            <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <div class="text-center mb-6">
-                <h3 id="solution-modal-title" class="text-3xl font-bold mb-2 text-emerald-400"></h3>
-                <p id="solution-modal-description" class="text-slate-300"></p>
-            </div>
-            <ul id="solution-modal-features" class="space-y-3 text-slate-200"></ul>
-        </div>
-    </div>
 
-    <div id="audit-modal-container" class="modal-overlay">
-        <div class="modal-content w-full max-w-md">
-            <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
-                <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-                <h1 class="text-3xl font-bold text-center text-white mb-2">Solicita tu Auditoría Gratuita</h1>
-                <p class="text-center text-slate-400 mb-8">Completa tus datos para agendar tu sesión estratégica.</p>
-                
-                <form id="audit-form" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST" class="space-y-6">
-                    <div>
-                        <label for="audit-name" class="text-sm font-medium text-slate-300 block mb-2">Nombre Completo</label>
-                        <input type="text" id="audit-name" name="name" placeholder="Tu nombre" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                    </div>
-                    <div>
-                        <label for="audit-email" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
-                        <input type="email" id="audit-email" name="email" placeholder="tu@empresa.com" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                    </div>
-                    <div>
-                        <label for="audit-challenge" class="text-sm font-medium text-slate-300 block mb-2">¿Cuál es tu mayor desafío manual o repetitivo?</label>
-                        <textarea id="audit-challenge" name="challenge" rows="3" placeholder="Ej: 'Copiar los datos de mis clientes de WhatsApp a un Excel...'" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                    </div>
-                    <div id="audit-form-status" class="mb-4 text-center font-medium"></div>
-                    <div>
-                        <button type="submit" id="audit-submit-button" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">
-                            <span id="audit-submit-text">Agendar mi Sesión</span>
-                            <span id="audit-loading-spinner" class="hidden animate-spin h-5 w-5 text-white inline-block">
-                                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.062 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+            // --> NUEVO CÓDIGO PARA EL FORMULARIO DE CONTACTO <--
+            const contactForm = document.getElementById('contact-form');
+            if(contactForm) {
+                const formContainer = document.getElementById('form-container');
 
-    <div id="login-modal-container" class="modal-overlay">
-        <div class="modal-content w-full max-w-md">
-            <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
-                 <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-                <h1 class="text-3xl font-bold text-center text-white mb-2">Acceso a tu Portal</h1>
-                 <p class="text-center text-slate-400 mb-8">Ingresa tus credenciales para ver tus flujos.</p>
-                
-                <form action="#" method="POST" class="space-y-6">
-                    <div>
-                        <label for="email-login" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
-                        <input type="email" id="email-login" name="email" placeholder="tu@empresa.com" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                    </div>
-                    <div>
-                         <label for="password-login" class="text-sm font-medium text-slate-300 block mb-2">Contraseña</label>
-                        <input type="password" id="password-login" name="password" placeholder="••••••••" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center">
-                            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 bg-slate-700 border-slate-600 text-emerald-600 focus:ring-emerald-500 rounded">
-                            <label for="remember-me" class="ml-2 block text-sm text-slate-400">Recordarme</label>
-                         </div>
-                        <div class="text-sm">
-                            <a href="#" class="font-medium text-emerald-500 hover:text-emerald-400">¿Olvidaste tu contraseña?</a>
-                     </div>
-                    </div>
-                    <div>
-                        <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Ingresar</button>
-                    </div>
-                 </form>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- General Modal Handling ---
-            const allModals = document.querySelectorAll('.modal-overlay');
-            const allCloseButtons = document.querySelectorAll('.close-modal-btn');
-
-            const closeModal = (modal) => {
-                if (modal) {
-                    modal.classList.remove('active');
-                }
-            };
-            const openModal = (modal) => {
-                if (modal) {
-                    modal.classList.add('active');
-                }
-            }
-
-            allCloseButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    closeModal(button.closest('.modal-overlay'));
-                });
-            });
-
-            allModals.forEach(modal => {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        closeModal(modal);
-                    }
-                });
-                modal.querySelectorAll('a[href^="#contacto"]').forEach(link => {
-                    link.addEventListener('click', () => closeModal(modal));
-                });
-            });
-            
-            // --- Mobile Menu Toggle ---
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            
-            // --- Solution Modal ---
-            const solutionCards = document.querySelectorAll('.solution-card');
-            const solutionModal = document.getElementById('solution-modal-container');
-            const solutionModalTitle = document.getElementById('solution-modal-title');
-            const solutionModalDescription = document.getElementById('solution-modal-description');
-            const solutionModalFeatures = document.getElementById('solution-modal-features');
-            
-            // NEW: Expanded industry data based on research
-            const industryData = {
-                inmobiliarias: { title: "Flujos para Inmobiliarias", description: "Captura, califica y asigna leads en segundos para que tus agentes se enfoquen en vender, no en tareas manuales.", features: ["Captura automática de leads desde portales y redes sociales.", "Asignación instantánea de leads a agentes vía WhatsApp/Email.", "Secuencias de seguimiento automáticas para nutrir prospectos.", "Agendamiento de visitas directo en el calendario del agente."] },
-                logistica: { title: "Flujos para Logística y Transporte", description: "Optimiza la comunicación y la gestión de envíos, reduciendo costos operativos y mejorando la satisfacción del cliente.", features: ["Notificaciones automáticas de estado de envío para clientes.", "Generación automática de facturas al confirmar entrega.", "Integración entre sistemas de almacén (WMS) y contabilidad.", "Chatbot de soporte para responder '¿Dónde está mi envío?' 24/7."] },
-                clinicas: { title: "Flujos para Clínicas y Salud", description: "Reduce las ausencias y la carga administrativa, mejorando la experiencia del paciente desde la cita hasta el seguimiento.", features: ["Recordatorios de citas automáticos por WhatsApp y Email.", "Confirmación y reprogramación de citas en un clic.", "Encuestas de satisfacción y solicitud de reseñas post-consulta.", "Gestión y segmentación de base de datos de pacientes."] },
-                ecommerce: { title: "Flujos para E-commerce", description: "Aumenta tus ventas y libera a tu equipo de soporte con automatizaciones que trabajan día y noche.", features: ["Recuperación de carritos abandonados con secuencias multicanal.", "Sincronización de inventario en tiempo real entre Shopify, Instagram, etc.", "Alertas automáticas de stock bajo.", "Chatbot de IA para responder preguntas frecuentes sobre pedidos y productos."] },
-                constructores: { title: "Flujos para Constructores", description: "Sé el primero en enterarte de nuevas oportunidades y gestiona tus proyectos y proveedores con máxima eficiencia.", features: ["Scraping de portales de licitaciones con alertas automáticas.", "Captura de leads desde portales de proveedores.", "Seguimiento automático a contactos de contratistas.", "Asignación automática de tareas y seguimiento a equipo de ventas."] },
-                servicios: { title: "Flujos para Servicios Profesionales", description: "Nunca más pierdas un cliente potencial por falta de seguimiento. Profesionaliza la captación y gestión de tus casos.", features: ["Registro automático de consultas desde la web a tu CRM.", "Recordatorios automáticos de reuniones y fechas de entrega.", "Envío de newsletters automatizadas para fidelizar clientes.", "Asignación automática de nuevos casos al especialista adecuado."] }
-            };
-
-            solutionCards.forEach(card => {
-                card.addEventListener('click', () => {
-                    const data = industryData[card.id];
-                    if (data) {
-                        solutionModalTitle.textContent = data.title;
-                        solutionModalDescription.textContent = data.description;
-                        solutionModalFeatures.innerHTML = '';
-                        data.features.forEach(featureText => {
-                            const li = document.createElement('li');
-                            li.className = 'flex items-start';
-                            li.innerHTML = `<svg class="w-5 h-5 mr-3 text-emerald-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span>${featureText}</span>`;
-                            solutionModalFeatures.appendChild(li);
-                        });
-                        openModal(solutionModal);
-                    }
-                });
-            });
-            
-            // --- Audit Modal ---
-            const auditModal = document.getElementById('audit-modal-container');
-            document.getElementById('open-audit-modal-hero').addEventListener('click', () => openModal(auditModal));
-            document.getElementById('open-audit-modal-cta').addEventListener('click', () => openModal(auditModal));
-            
-            // --- Login Modal ---
-            const loginModal = document.getElementById('login-modal-container');
-            document.getElementById('open-login-modal-desktop').addEventListener('click', () => openModal(loginModal));
-            document.getElementById('open-login-modal-mobile').addEventListener('click', () => openModal(loginModal));
-
-            // --- Formspree Integration for BOTH Contact and Audit Forms ---
-            const handleFormSubmit = async (form, formStatus, submitButton, submitText, loadingSpinner) => {
-                const data = new FormData(form);
-                try {
-                    const response = await fetch(form.action, {
-                        method: form.method,
-                        body: data,
-                        headers: { 'Accept': 'application/json' }
-                    });
-
-                    if (response.ok) {
-                        formStatus.textContent = "¡Mensaje enviado con éxito! Te contactaremos pronto.";
-                        formStatus.className = "text-center font-medium text-emerald-500";
-                        form.reset();
-                    } else {
-                        formStatus.textContent = "Oops! Hubo un problema al enviar tu mensaje.";
-                        formStatus.className = "text-center font-medium text-red-500";
-                    }
-                } catch (error) {
-                    // --- CAMBIO CLAVE: AÑADIR DIAGNÓSTICO A LA CONSOLA ---
-                    console.error("Error detallado de envío del formulario:", error);
-                    formStatus.textContent = "Oops! Hubo un problema de conexión. Inténtalo de nuevo más tarde.";
-                    formStatus.className = "text-center font-medium text-red-500";
-                } finally {
-                    // Reset loading state
-                    submitText.textContent = submitButton.querySelector('span:first-child').dataset.originalText;
-                    submitButton.disabled = false;
-                    loadingSpinner.classList.add('hidden');
-                }
-            };
-            
-            const setupForm = (formId, statusId, buttonId, textId, spinnerId) => {
-                const form = document.getElementById(formId);
-                if (!form) return;
-                
-                const formStatus = document.getElementById(statusId);
-                const submitButton = document.getElementById(buttonId);
-                const submitText = document.getElementById(textId);
-                const loadingSpinner = document.getElementById(spinnerId);
-
-                submitText.dataset.originalText = submitText.textContent;
-
-                form.addEventListener("submit", async (e) => {
+                contactForm.addEventListener('submit', async function (e) {
                     e.preventDefault();
-                    
-                    // Show loading state
-                    submitText.textContent = 'Enviando...';
-                    submitButton.disabled = true;
-                    loadingSpinner.classList.remove('hidden');
-                    formStatus.textContent = '';
-                    
-                    handleFormSubmit(form, formStatus, submitButton, submitText, loadingSpinner);
-                });
-            };
 
-            setupForm('contact-form', 'form-status', 'submit-button', 'submit-text', 'loading-spinner');
-            setupForm('audit-form', 'audit-form-status', 'audit-submit-button', 'audit-submit-text', 'audit-loading-spinner');
+                    const form = e.target;
+                    const submitButton = document.getElementById('submit-button');
+                    const buttonText = submitButton.querySelector('span');
+                    const loadingSpinner = submitButton.querySelector('svg');
+
+                    buttonText.textContent = 'Enviando...';
+                    loadingSpinner.classList.remove('hidden');
+                    submitButton.disabled = true;
+
+                    const data = new FormData(form);
+                    
+                    try {
+                        const response = await fetch(form.action, {
+                            method: form.method,
+                            body: data,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            formContainer.innerHTML = `
+                                <div class="text-center">
+                                    <svg class="w-16 h-16 mx-auto mb-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    <h3 class="text-2xl font-bold text-white mb-2">¡Mensaje enviado con éxito!</h3>
+                                    <p class="text-slate-300">Gracias por contactarnos. Un especialista de nuestro equipo se comunicará contigo a la brevedad.</p>
+                                </div>
+                            `;
+                        } else {
+                            throw new Error('Error en el envío del servidor.');
+                        }
+                    } catch (error) {
+                        formContainer.innerHTML = `
+                            <div class="text-center">
+                                <svg class="w-16 h-16 mx-auto mb-4 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <h3 class="text-2xl font-bold text-white mb-2">Hubo un problema</h3>
+                                <p class="text-slate-300">No pudimos enviar tu mensaje. Por favor, intenta de nuevo o contáctanos por WhatsApp.</p>
+                            </div>
+                        `;
+                    }
+                });
+            }
         });
     </script>
 </body>
 </html>
-
-
-
-
-

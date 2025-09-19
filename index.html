@@ -9,7 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
@@ -55,8 +55,8 @@
                 <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Somos tu Socio de Eficiencia Operativa en Panamá. Diseñamos <strong>Secuencias Inteligentes</strong> que conectan tus sistemas, eliminan tareas manuales y liberan a tu equipo para que se enfoque en lo que realmente importa: tus clientes.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <button id="open-auditoria-modal-hero" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">¡Quiero mi Auditoría GRATIS!</button>
-                    <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
-                    <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
+                    <a href="https://wa.me/50765074479?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
+                    <a href="https://calendly.com/afluxsi/30min" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
                 </div>
             </div>
         </section>
@@ -68,8 +68,23 @@
             </div>
         </section>
 
+        <!-- CAMBIO REALIZADO: SECCIÓN DE SOLUCIONES RESTAURADA -->
         <section id="soluciones" class="py-20 px-4">
-            </section>
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-white tracking-tight">Automatización a la Medida de tu Industria en Panamá</h2>
+                <p class="text-slate-400 text-center max-w-2xl mx-auto mb-12">Haz clic en tu industria para descubrir los puntos de dolor que resolvemos y las soluciones que generamos.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <button id="inmobiliarias" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></div><h3 class="text-xl font-bold text-white">Inmobiliarias</h3></button>
+                    <button id="hoteles" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg></div><h3 class="text-xl font-bold text-white">Hoteles y Restaurantes</h3></button>
+                    <button id="clinicas" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg></div><h3 class="text-xl font-bold text-white">Clínicas y Salud</h3></button>
+                    <button id="ecommerce" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div><h3 class="text-xl font-bold text-white">E-commerce</h3></button>
+                    <button id="logistica" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2-2h8zM13 16h6l-3-3h-3v3z"></path></svg></div><h3 class="text-xl font-bold text-white">Logística</h3></button>
+                    <button id="constructores" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg></div><h3 class="text-xl font-bold text-white">Constructores</h3></button>
+                    <button id="serigrafia" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l2 2m-2-2l-2-2m2 2l2-2M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3"></path></svg></div><h3 class="text-xl font-bold text-white">Serigrafía e Imprentas</h3></button>
+                    <button id="servicios" class="solution-card bg-slate-800 p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:scale-105 border border-slate-700 group"><div class="bg-purple-900/50 text-purple-400 rounded-lg w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-colors group-hover:bg-purple-500/20"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div><h3 class="text-xl font-bold text-white">Servicios Profesionales</h3></button>
+                </div>
+            </div>
+        </section>
 
         <section id="auditoria" class="py-20 px-4 bg-slate-800">
             <div class="container mx-auto max-w-4xl text-center bg-slate-900 border-2 border-emerald-500/50 rounded-lg p-10 shadow-2xl">
@@ -89,7 +104,6 @@
                         <div class="mb-6"><span class="text-4xl font-extrabold text-white">$500 - $1,500</span><p class="text-sm text-slate-300 mt-1">Pago único</p></div>
                         <button id="open-quickwin-modal" class="w-full mt-auto block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">Empezar mi Auditoría</button>
                     </div>
-
                     <div class="bg-slate-800 p-8 rounded-lg border-2 border-emerald-500 flex flex-col relative">
                         <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 px-4 py-1 bg-emerald-500 text-white rounded-full text-sm font-bold tracking-wider">Más popular</span>
                         <h3 class="text-2xl font-bold mb-2 text-emerald-400">Automatización como Servicio</h3>
@@ -97,14 +111,12 @@
                         <div class="mb-6"><span class="text-4xl font-extrabold text-white">Desde $1,000</span><span class="text-slate-400">/mes</span></div>
                         <button id="open-automatizacion-modal" class="w-full mt-auto block text-center btn-gradient text-white font-bold py-3 rounded-lg hover:scale-105 transition-transform">Impulsar mi Crecimiento</button>
                     </div>
-
                     <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 flex flex-col">
                         <h3 class="text-2xl font-bold mb-2 text-emerald-400">Agentes de IA a Medida</h3>
                         <p class="text-slate-400 mb-6 flex-grow">Soluciones avanzadas para desafíos de negocio complejos.</p>
                         <div class="mb-6"><span class="text-4xl font-extrabold text-white">Desde $2,500</span><p class="text-sm text-slate-300 mt-1">Por proyecto</p></div>
                         <button id="open-agentes-ia-modal" class="w-full mt-auto block text-center bg-slate-700 text-white font-bold py-3 rounded-lg hover:bg-slate-600 transition-colors">Diseñar mi Solución a Medida</button>
                     </div>
-
                     <div class="bg-slate-800 p-8 rounded-lg border border-dashed border-purple-400 flex flex-col">
                         <h3 class="text-2xl font-bold mb-2 text-purple-400">Plan Premium</h3>
                         <p class="text-slate-400 mb-6 flex-grow">Soluciones de nivel empresarial, integración de sistemas legados y automatización a gran escala.</p>
@@ -119,10 +131,8 @@
             <div class="container mx-auto max-w-2xl text-center">
                 <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para automatizar tu negocio?</h2>
                 <p class="text-slate-400 mb-8">Deja tus datos y un especialista te contactará para una asesoría gratuita.</p>
-                
                 <div id="form-container-bottom" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
-                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                             <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                             <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
@@ -156,6 +166,9 @@
         <p class="text-slate-400">&copy; 2025 AfluxSI. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- MODALES -->
+
+    <!-- Modal de Auditoría Gratuita (General) -->
     <div id="auditoria-modal-container" class="modal-overlay">
         <div class="modal-content w-full max-w-2xl">
             <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
@@ -164,39 +177,16 @@
                     <h2 class="text-3xl font-bold mb-4 text-white">Solicita tu Auditoría Gratuita</h2>
                     <p class="text-slate-400 mb-8">Danos un poco más de información para preparar tu auditoría de automatización sin costo.</p>
                 </div>
-                
                 <div id="form-container-modal-auditoria">
-                    <form id="contact-form-modal-auditoria" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <select name="solution_interest" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                                <option value="" disabled selected>¿En qué sector necesitas ayuda?</option>
-                                <option value="inmobiliarias">Inmobiliarias</option>
-                                <option value="hoteles_restaurantes">Hoteles y Restaurantes</option>
-                                <option value="clinicas_salud">Clínicas y Salud</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="logistica">Logística</option>
-                                <option value="construccion">Constructores</option>
-                                <option value="serigrafia_imprentas">Serigrafía e Imprentas</option>
-                                <option value="servicios_profesionales">Servicios Profesionales</option>
-                                <option value="otro">Otro (descríbelo abajo)</option>
-                            </select>
-                        </div>
-                        <div class="mb-6">
-                            <textarea name="message" rows="4" placeholder="Cuéntanos más sobre tu negocio y el proceso que quieres automatizar..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                            <span>Solicitar mi Auditoría</span>
-                            <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                        </button>
+                    <form id="contact-form-modal-auditoria" class="modal-form" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                        <!-- Contenido del formulario... -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal para Plan "Auditoría Quick Win" -->
     <div id="quickwin-modal-container" class="modal-overlay">
         <div class="modal-content w-full max-w-2xl">
             <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
@@ -205,40 +195,17 @@
                     <h2 class="text-3xl font-bold mb-4 text-emerald-400">Empezar mi Auditoría "Quick Win"</h2>
                     <p class="text-slate-400 mb-8">Cuéntanos sobre tu negocio para identificar un proyecto de alto impacto.</p>
                 </div>
-                
                 <div id="form-container-quickwin">
-                    <form id="contact-form-quickwin" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">form-quickwin" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
                         <input type="hidden" name="plan_interest" value="Auditoría Quick Win">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <select name="solution_interest" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                                <option value="" disabled selected>¿En qué sector necesitas ayuda?</option>
-                                <option value="inmobiliarias">Inmobiliarias</option>
-                                <option value="hoteles_restaurantes">Hoteles y Restaurantes</option>
-                                <option value="clinicas_salud">Clínicas y Salud</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="logistica">Logística</option>
-                                <option value="construccion">Constructores</option>
-                                <option value="serigrafia_imprentas">Serigrafía e Imprentas</option>
-                                <option value="servicios_profesionales">Servicios Profesionales</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <div class="mb-6">
-                            <textarea name="message" rows="4" placeholder="Describe brevemente el proceso que te gustaría optimizar o el desafío principal..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                            <span>Enviar Solicitud</span>
-                            <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                        </button>
+                        <!-- Contenido del formulario... -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal para Plan "Automatización como Servicio" -->
     <div id="automatizacion-modal-container" class="modal-overlay">
         <div class="modal-content w-full max-w-2xl">
             <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
@@ -247,40 +214,17 @@
                     <h2 class="text-3xl font-bold mb-4 text-emerald-400">Impulsar mi Crecimiento con Automatización</h2>
                     <p class="text-slate-400 mb-8">Dinos cómo podemos ser tu socio de eficiencia a largo plazo.</p>
                 </div>
-                
                 <div id="form-container-automatizacion">
-                    <form id="contact-form-automatizacion" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST"> method="POST">
                         <input type="hidden" name="plan_interest" value="Automatización como Servicio">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <select name="solution_interest" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                                <option value="" disabled selected>¿En qué sector necesitas ayuda?</option>
-                                <option value="inmobiliarias">Inmobiliarias</option>
-                                <option value="hoteles_restaurantes">Hoteles y Restaurantes</option>
-                                <option value="clinicas_salud">Clínicas y Salud</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="logistica">Logística</option>
-                                <option value="construccion">Constructores</option>
-                                <option value="serigrafia_imprentas">Serigrafía e Imprentas</option>
-                                <option value="servicios_profesionales">Servicios Profesionales</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <div class="mb-6">
-                            <textarea name="message" rows="4" placeholder="Describe los procesos que deseas automatizar o los objetivos de crecimiento..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                            <span>Enviar Solicitud</span>
-                            <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                        </button>
+                        <!-- Contenido del formulario... -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Modal para Plan "Agentes de IA a Medida" -->
     <div id="agentes-ia-modal-container" class="modal-overlay">
         <div class="modal-content w-full max-w-2xl">
             <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
@@ -289,47 +233,60 @@
                     <h2 class="text-3xl font-bold mb-4 text-emerald-400">Diseñar mi Solución de Agentes de IA</h2>
                     <p class="text-slate-400 mb-8">Describe tu desafío de negocio complejo y cómo crees que la IA podría ayudar.</p>
                 </div>
-                
                 <div id="form-container-agentes-ia">
-                    <form id="contact-form-agentes-ia" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">" method="POST">
+                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST"> method="POST">
                         <input type="hidden" name="plan_interest" value="Agentes de IA a Medida">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                            <select name="solution_interest" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                                <option value="" disabled selected>¿En qué sector necesitas ayuda?</option>
-                                <option value="inmobiliarias">Inmobiliarias</option>
-                                <option value="hoteles_restaurantes">Hoteles y Restaurantes</option>
-                                <option value="clinicas_salud">Clínicas y Salud</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="logistica">Logística</option>
-                                <option value="construccion">Constructores</option>
-                                <option value="serigrafia_imprentas">Serigrafía e Imprentas</option>
-                                <option value="servicios_profesionales">Servicios Profesionales</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-                        <div class="mb-6">
-                            <textarea name="message" rows="4" placeholder="Describe tu proyecto de IA o el problema que buscas resolver con una solución avanzada..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
-                            <span>Enviar Solicitud</span>
-                            <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                        </button>
+                        <!-- Contenido del formulario... -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div id="solution-modal-container" class="modal-overlay"> </div>
-    <div id="login-modal-container" class="modal-overlay"> </div>
+    <!-- Modal de Soluciones por Industria -->
+    <div id="solution-modal-container" class="modal-overlay">
+        <div class="modal-content bg-slate-800 border border-slate-700 p-8 rounded-lg shadow-2xl max-w-2xl w-full relative">
+            <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <h3 id="solution-modal-title" class="text-3xl font-bold mb-6 text-center text-emerald-400"></h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-3">Puntos de Dolor Típicos:</h4>
+                    <ul id="solution-modal-pains" class="space-y-2 text-slate-300"></ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-3">Nuestras Secuencias Inteligentes:</h4>
+                    <ul id="solution-modal-solutions" class="space-y-2 text-slate-300"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal de Login -->
+    <div id="login-modal-container" class="modal-overlay">
+        <div class="modal-content w-full max-w-md">
+            <div class="bg-slate-800 border border-slate-700 rounded-lg shadow-2xl p-8 md:p-10 relative">
+                 <button class="close-modal-btn absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                 <h1 class="text-3xl font-bold text-center text-white mb-2">Acceso a tu Portal</h1>
+                 <p class="text-center text-slate-400 mb-8">Ingresa tus credenciales para ver tus flujos.</p>
+                 <form action="#" method="POST" class="space-y-6">
+                     <div>
+                         <label for="email-login" class="text-sm font-medium text-slate-300 block mb-2">Correo Electrónico</label>
+                         <input type="email" id="email-login" name="email" placeholder="tu@empresa.com" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                     </div>
+                     <div>
+                         <label for="password-login" class="text-sm font-medium text-slate-300 block mb-2">Contraseña</label>
+                         <input type="password" id="password-login" name="password" placeholder="••••••••" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                     </div>
+                     <div>
+                         <button type="submit" class="w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform">Ingresar</button>
+                     </div>
+                 </form>
+            </div>
+        </div>
+    </div>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
-        // --- Lógica base para abrir y cerrar modales ---
         const openModal = (modal) => { if (modal) modal.classList.add('active'); };
         const closeModal = (modal) => { if (modal) modal.classList.remove('active'); };
 
@@ -350,23 +307,99 @@
         const quickwinModal = document.getElementById('quickwin-modal-container');
         const automatizacionModal = document.getElementById('automatizacion-modal-container');
         const agentesIaModal = document.getElementById('agentes-ia-modal-container');
+        const solutionModal = document.getElementById('solution-modal-container');
         const loginModal = document.getElementById('login-modal-container');
-        // const solutionModal = document.getElementById('solution-modal-container'); // Si tienes este, asegúrate de añadirlo y referenciarlo.
 
         // --- LÓGICA PARA ABRIR LOS MODALES ESPECÍFICOS ---
-        // Auditoría Gratuita (Hero y Secundaria)
         document.getElementById('open-auditoria-modal-hero').addEventListener('click', () => openModal(auditoriaModal));
         document.getElementById('open-auditoria-modal-secondary').addEventListener('click', () => openModal(auditoriaModal));
-
-        // Planes de Precios
         document.getElementById('open-quickwin-modal').addEventListener('click', () => openModal(quickwinModal));
         document.getElementById('open-automatizacion-modal').addEventListener('click', () => openModal(automatizacionModal));
         document.getElementById('open-agentes-ia-modal').addEventListener('click', () => openModal(agentesIaModal));
-
-        // Acceso Clientes
         document.getElementById('open-login-modal-desktop').addEventListener('click', () => openModal(loginModal));
         document.getElementById('open-login-modal-mobile').addEventListener('click', () => openModal(loginModal));
         
+        // --- PLANTILLA DE FORMULARIO REUTILIZABLE ---
+        const formTemplate = (buttonText = 'Enviar Solicitud', planName = '') => {
+            let hiddenInput = planName ? `<input type="hidden" name="plan_interest" value="${planName}">` : '';
+            return `
+                ${hiddenInput}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                    <select name="solution_interest" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+                        <option value="" disabled selected>¿En qué sector necesitas ayuda?</option>
+                        <option value="inmobiliarias">Inmobiliarias</option>
+                        <option value="hoteles_restaurantes">Hoteles y Restaurantes</option>
+                        <option value="clinicas_salud">Clínicas y Salud</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="logistica">Logística</option>
+                        <option value="construccion">Constructores</option>
+                        <option value="serigrafia_imprentas">Serigrafía e Imprentas</option>
+                        <option value="servicios_profesionales">Servicios Profesionales</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <textarea name="message" rows="4" placeholder="Cuéntanos más sobre tu negocio o el proceso a automatizar..." required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
+                </div>
+                <button type="submit" class="submit-button w-full btn-gradient text-white font-bold py-3 px-6 rounded-lg hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                    <span>${buttonText}</span>
+                    <svg class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                </button>
+            `;
+        };
+
+        // Rellenar los formularios en los modales
+        document.getElementById('contact-form-modal-auditoria').innerHTML = formTemplate('Solicitar mi Auditoría');
+        document.getElementById('contact-form-quickwin').innerHTML = formTemplate('Enviar Solicitud', 'Auditoría Quick Win');
+        document.getElementById('contact-form-automatizacion').innerHTML = formTemplate('Enviar Solicitud', 'Automatización como Servicio');
+        document.getElementById('contact-form-agentes-ia').innerHTML = formTemplate('Enviar Solicitud', 'Agentes de IA a Medida');
+
+
+        // --- Lógica del modal de soluciones por industria ---
+        const industryData = {
+            inmobiliarias: { title: "Automatización para Inmobiliarias", pains: ["Pérdida de leads por seguimiento lento.", "Entrada manual de datos a un CRM o Excel.", "Agentes dedican más tiempo a administrar que a vender."], solutions: ["**Captura instantánea de leads** desde portales y redes sociales.", "**Asignación automática** de prospectos al agente correcto.", "**Secuencias de seguimiento** por WhatsApp y Email 24/7."] },
+            hoteles: { title: "Automatización para Hoteles y Restaurantes", pains: ["Gestión manual y caótica de reservas.", "Personal sobrecargado respondiendo preguntas frecuentes.", "Pérdida de oportunidades de fidelización post-visita."], solutions: ["**Sistema de reservas inteligente** que confirma y agenda solo.", "**Asistente virtual por WhatsApp** que responde 24/7.", "**Campañas de fidelización** que solicitan reseñas y ofrecen descuentos."] },
+            clinicas: { title: "Automatización para Clínicas y Sector Salud", pains: ["Alta tasa de ausentismo (no-shows) de pacientes.", "Proceso de llenado de formularios en papel, lento y con errores.", "Falta de seguimiento proactivo para citas de control."], solutions: ["**Recordatorios de citas inteligentes** que reducen las ausencias.", "**Digitalización de formularios** que se integran al sistema.", "**Campañas de 'recall'** automáticas para chequeos periódicos."] },
+            ecommerce: { title: "Automatización para E-commerce", pains: ["Carritos de compra abandonados que no se recuperan.", "Desincronización de inventario entre la tienda y redes sociales.", "Equipo de soporte saturado con preguntas sobre pedidos."], solutions: ["**Secuencias de recuperación de carritos** con ofertas personalizadas.", "**Sincronización de inventario en tiempo real** entre todos los canales.", "**Asistente virtual** que informa el estado de los pedidos 24/7."] },
+            logistica: { title: "Automatización para Logística", pains: ["Comunicación manual y reactiva con clientes sobre envíos.", "Errores en facturación por entrada de datos duplicada.", "Falta de visibilidad del estado de las operaciones."], solutions: ["**Notificaciones de seguimiento proactivas** por WhatsApp/Email.", "**Generación automática de facturas** al confirmar entrega.", "**Paneles de control (dashboards)** con KPIs en tiempo real."] },
+            constructores: { title: "Automatización para Construcción", pains: ["Pérdida de oportunidades por no enterarse a tiempo de licitaciones.", "Seguimiento manual a proveedores y subcontratistas.", "Gestión de documentos y permisos desorganizada."], solutions: ["**Agente de monitoreo de portales de licitaciones** con alertas instantáneas.", "**Flujos de seguimiento automático** a la cadena de suministro.", "**Repositorio centralizado y digital** de documentos por proyecto."] },
+            serigrafia: { title: "Automatización para Serigrafía e Imprentas", pains: ["Proceso de cotización lento y propenso a errores.", "Seguimiento caótico de pedidos por WhatsApp y correo.", "Falta de un sistema para que clientes recurrentes reordenen fácil."], solutions: ["**Calculadora de cotizaciones instantánea** vía formulario web.", "**Portal de seguimiento de pedidos** para clientes.", "**Flujo de reorden con un clic** para clientes existentes."] },
+            servicios: { title: "Automatización para Servicios Profesionales", pains: ["Pérdida de prospectos por falta de seguimiento inmediato.", "Agendamiento de reuniones y recordatorios consume mucho tiempo.", "Proceso de onboarding de nuevos clientes es manual y lento."], solutions: ["**Captura y calificación automática de leads** desde la web y LinkedIn.", "**Sistema de agendamiento inteligente** integrado a su calendario.", "**Secuencia de bienvenida y onboarding** automática para nuevos clientes."] }
+        };
+        
+        document.querySelectorAll('.solution-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const data = industryData[card.id];
+                if (data) {
+                    document.getElementById('solution-modal-title').textContent = data.title;
+                    const painsList = document.getElementById('solution-modal-pains');
+                    const solutionsList = document.getElementById('solution-modal-solutions');
+                    painsList.innerHTML = '';
+                    solutionsList.innerHTML = '';
+
+                    data.pains.forEach(painText => {
+                        const li = document.createElement('li');
+                        li.className = 'flex items-start';
+                        li.innerHTML = `<svg class="w-5 h-5 mr-3 text-red-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>${painText}</span>`;
+                        painsList.appendChild(li);
+                    });
+
+                    data.solutions.forEach(solutionText => {
+                        const li = document.createElement('li');
+                        li.className = 'flex items-start';
+                        const solutionHTML = solutionText.replace(/\*\*(.*?)\*\*/g, '<strong class="text-emerald-400">$1</strong>');
+                        li.innerHTML = `<svg class="w-5 h-5 mr-3 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>${solutionHTML}</span>`;
+                        solutionsList.appendChild(li);
+                    });
+
+                    openModal(solutionModal);
+                }
+            });
+        });
+
         // --- Lógica de Envío de Formularios ---
         const handleFormSubmit = async (form, formContainer) => {
             const submitButton = form.querySelector('.submit-button');
@@ -380,84 +413,30 @@
             const data = new FormData(form);
             
             try {
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
-                });
-
+                const response = await fetch(form.action, { method: form.method, body: data, headers: { 'Accept': 'application/json' } });
                 if (response.ok) {
-                    formContainer.innerHTML = `
-                        <div class="text-center">
-                            <svg class="w-16 h-16 mx-auto mb-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                            <h3 class="text-2xl font-bold text-white mb-2">¡Mensaje enviado con éxito!</h3>
-                            <p class="text-slate-300">Gracias por contactarnos. Un especialista se comunicará contigo a la brevedad.</p>
-                        </div>`;
-                } else {
-                    throw new Error('Error en el envío del servidor.');
-                }
+                    formContainer.innerHTML = `<div class="text-center"><svg class="w-16 h-16 mx-auto mb-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><h3 class="text-2xl font-bold text-white mb-2">¡Mensaje enviado con éxito!</h3><p class="text-slate-300">Gracias por contactarnos. Un especialista se comunicará contigo a la brevedad.</p></div>`;
+                } else { throw new Error('Error en el envío del servidor.'); }
             } catch (error) {
-                formContainer.innerHTML = `
-                    <div class="text-center">
-                        <svg class="w-16 h-16 mx-auto mb-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                        <h3 class="2xl font-bold text-white mb-2">Hubo un problema</h3>
-                        <p class="text-slate-300">No pudimos enviar tu mensaje. Por favor, intenta de nuevo o contáctanos por WhatsApp.</p>
-                    </div>`;
+                formContainer.innerHTML = `<div class="text-center"><svg class="w-16 h-16 mx-auto mb-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg><h3 class="text-2xl font-bold text-white mb-2">Hubo un problema</h3><p class="text-slate-300">No pudimos enviar tu mensaje. Por favor, intenta de nuevo.</p></div>`;
             }
         };
 
-        // Formulario de Contacto Inferior
+        // Asignar el manejador de envío a todos los formularios
+        document.querySelectorAll('.modal-form').forEach(form => {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                handleFormSubmit(this, this.parentElement);
+            });
+        });
         const formBottom = document.getElementById('contact-form-bottom');
         if (formBottom) {
             formBottom.addEventListener('submit', function (e) {
                 e.preventDefault();
-                const formContainer = document.getElementById('form-container-bottom');
-                handleFormSubmit(this, formContainer);
-            });
-        }
-
-        // Formulario Modal de Auditoría Gratuita
-        const formModalAuditoria = document.getElementById('contact-form-modal-auditoria');
-        if (formModalAuditoria) {
-            formModalAuditoria.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formContainer = document.getElementById('form-container-modal-auditoria');
-                handleFormSubmit(this, formContainer);
-            });
-        }
-
-        // Formulario Modal "Auditoría Quick Win"
-        const formQuickwin = document.getElementById('contact-form-quickwin');
-        if (formQuickwin) {
-            formQuickwin.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formContainer = document.getElementById('form-container-quickwin');
-                handleFormSubmit(this, formContainer);
-            });
-        }
-
-        // Formulario Modal "Automatización como Servicio"
-        const formAutomatizacion = document.getElementById('contact-form-automatizacion');
-        if (formAutomatizacion) {
-            formAutomatizacion.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formContainer = document.getElementById('form-container-automatizacion');
-                handleFormSubmit(this, formContainer);
-            });
-        }
-
-        // Formulario Modal "Agentes de IA a Medida"
-        const formAgentesIa = document.getElementById('contact-form-agentes-ia');
-        if (formAgentesIa) {
-            formAgentesIa.addEventListener('submit', function (e) {
-                e.preventDefault();
-                const formContainer = document.getElementById('form-container-agentes-ia');
-                handleFormSubmit(this, formContainer);
+                handleFormSubmit(this, this.parentElement);
             });
         }
     });
     </script>
 </body>
 </html>
-
-

@@ -55,8 +55,8 @@
                 <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Somos tu Socio de Eficiencia Operativa en Panamá. Diseñamos <strong>Secuencias Inteligentes</strong> que conectan tus sistemas, eliminan tareas manuales y liberan a tu equipo para que se enfoque en lo que realmente importa: tus clientes.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <button id="open-auditoria-modal-hero" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">¡Quiero mi Auditoría GRATIS!</button>
-                    <a href="https://wa.me/50765074479?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
-                    <a href="https://calendly.com/afluxsi/30min" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
+                    <a href="https://wa.me/507NUMEROAQUI?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
+                    <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
                 </div>
             </div>
         </section>
@@ -132,7 +132,8 @@
                 <h2 class="text-4xl font-bold mb-4 text-white">¿Listo para automatizar tu negocio?</h2>
                 <p class="text-slate-400 mb-8">Deja tus datos y un especialista te contactará para una asesoría gratuita.</p>
                 <div id="form-container-bottom" class="w-full bg-slate-800 p-8 rounded-lg shadow-lg border border-slate-700">
-                <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">                                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <input type="text" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                             <input type="email" name="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
                             <input type="text" name="company" placeholder="Nombre de tu empresa" required class="w-full px-4 py-3 bg-slate-700 text-white border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
@@ -178,7 +179,7 @@
                     <p class="text-slate-400 mb-8">Danos un poco más de información para preparar tu auditoría de automatización sin costo.</p>
                 </div>
                 <div id="form-container-modal-auditoria">
-                    <form id="contact-form-modal-auditoria" class="modal-form" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                    <form id="contact-form-modal-auditoria" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
                         <!-- Contenido del formulario... -->
                     </form>
                 </div>
@@ -196,7 +197,7 @@
                     <p class="text-slate-400 mb-8">Cuéntanos sobre tu negocio para identificar un proyecto de alto impacto.</p>
                 </div>
                 <div id="form-container-quickwin">
-                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">form-quickwin" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
+                    <form id="contact-form-quickwin" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
                         <input type="hidden" name="plan_interest" value="Auditoría Quick Win">
                         <!-- Contenido del formulario... -->
                     </form>
@@ -215,7 +216,7 @@
                     <p class="text-slate-400 mb-8">Dinos cómo podemos ser tu socio de eficiencia a largo plazo.</p>
                 </div>
                 <div id="form-container-automatizacion">
-                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST"> method="POST">
+                    <form id="contact-form-automatizacion" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
                         <input type="hidden" name="plan_interest" value="Automatización como Servicio">
                         <!-- Contenido del formulario... -->
                     </form>
@@ -234,7 +235,7 @@
                     <p class="text-slate-400 mb-8">Describe tu desafío de negocio complejo y cómo crees que la IA podría ayudar.</p>
                 </div>
                 <div id="form-container-agentes-ia">
-                    <form id="contact-form-bottom" action="https://app.afluxsi.com/webhook/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST"> method="POST">
+                    <form id="contact-form-agentes-ia" class="modal-form" action="https://app.afluxsi.com/webhook-test/cb374361-891d-43c6-979a-ac44ee970aa0" method="POST">
                         <input type="hidden" name="plan_interest" value="Agentes de IA a Medida">
                         <!-- Contenido del formulario... -->
                     </form>
@@ -440,5 +441,4 @@
     </script>
 </body>
 </html>
-
 

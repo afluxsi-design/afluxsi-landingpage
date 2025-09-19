@@ -55,8 +55,8 @@
                 <p class="text-lg sm:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">Somos tu Socio de Eficiencia Operativa en Panamá. Diseñamos <strong>Secuencias Inteligentes</strong> que conectan tus sistemas, eliminan tareas manuales y liberan a tu equipo para que se enfoque en lo que realmente importa: tus clientes.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
                     <button id="open-auditoria-modal-hero" class="btn-gradient text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:scale-105 transition-transform w-full sm:w-auto flex items-center justify-center gap-2">¡Quiero mi Auditoría GRATIS!</button>
-                    <a href="https://wa.me/?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
-                    <a href="https://calendly.com/afluxsi/demo" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
+                    <a href="https://wa.me/50765074479?text=Hola%20AfluxSI,%20me%20interesa%20automatizar%20mi%20negocio." target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📲 Chatear con un Experto</a>
+                    <a href="https://calendly.com/afluxsi/30min" target="_blank" class="bg-slate-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-slate-600 transition-colors w-full sm:w-auto flex items-center justify-center gap-2">📅 Agendar una Demo</a>
                 </div>
             </div>
         </section>
@@ -440,4 +440,5 @@
     </script>
 </body>
 </html>
+
 
